@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Crmpro Test automtion regression suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <test thread-count="3" parallel="tests" name="Crmpro App Test - Chrome(failed)" verbose="3">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.mytest.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="getHomePageTitle"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.mytest.HomePageTest -->
+    </classes>
+  </test> <!-- Crmpro App Test - Chrome(failed) -->
+  <test thread-count="3" parallel="tests" name="Crmpro App Test - Firefox(failed)" verbose="3">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.mytest.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="getHomePageTitle"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.mytest.HomePageTest -->
+    </classes>
+  </test> <!-- Crmpro App Test - Firefox(failed) -->
+</suite> <!-- Failed suite [Crmpro Test automtion regression suite] -->
